@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #553055;
+  @media screen {
+    max-width: 450px;
+  }
 }
 
 .App{
