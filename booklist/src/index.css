@@ -89,7 +89,7 @@ input[type='text']:hover, input[type='text']:focus{
   border: 1pt solid rgb(255, 200, 237);
   border-radius: 25px;
 }
-input[type='submit']{
+button, input[type='submit']{
   margin: 10px auto;
   background: rgba(238, 238, 238, 0.664);
   border: 0;
@@ -97,7 +97,7 @@ input[type='submit']{
   padding: 6px 20px;
   display: block;
 }
-input[type='submit']:hover{
+button:hover, input[type='submit']:hover{
   margin: 10px auto;
   background: rgba(217, 130, 235, 0.664);
   border: solid 1pt rgb(255, 200, 237);

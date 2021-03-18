@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { BookContext } from '../contexts/BookContext';
 
 const NewBookForm = () => {
@@ -13,17 +14,19 @@ const NewBookForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input
-                type='text' placeholder="book title" required
-                value={title} onChange={(e) => setTitle(e.target.value)}
-            />
-            <input
-                type='text' placeholder="author" required
-                value={author} onChange={(e) => setAuthor(e.target.value)}
-            />
-            <input type='submit' value="add book" />
-        </form>
+        <div>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type='text' placeholder="book title" required
+                    value={title} onChange={(e) => setTitle(e.target.value)}
+                />
+                <input
+                    type='text' placeholder="author" required
+                    value={author} onChange={(e) => setAuthor(e.target.value)}
+                />
+                <input type='submit' value="add book" />
+            </form>
+        </div>
     );
 }
 
