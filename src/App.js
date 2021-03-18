@@ -7,14 +7,15 @@ import LoginPage from './LoginPage';
 function App() {
   return (
     <div className="App">
-      {/* <AuthContextProvider> */}
+      {/* <AuthContextProvider>
         <Router>
           <Switch>
             <Route path='/' component={BookListPage} />
-            {/* <Route path='/' component={LoginPage} /> */}
+            <Route path='/' component={LoginPage} />
           </Switch>
         </Router>
-      {/* </AuthContextProvider> */}
+      </AuthContextProvider> */}
+      <BookListPage/>
     </div>
   );
 }
